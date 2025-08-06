@@ -1,0 +1,18 @@
+{
+  "name": "javascript-widgets-demo-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "TS4NFDI",
+  "license": "ISC",
+  "description": "Demo project for using the JavaScript widget NPM package.",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "@ts4nfdi/terminology-service-suite": "^1.0.34"
+  },
+  "devDependencies": {
+    "webpack": "^5.101.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
