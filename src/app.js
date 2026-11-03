@@ -1,4 +1,4 @@
-import * as ts4nfdiWidgets from '@ts4nfdi/terminology-service-suite';
+import * as ts4nfdiWidgets from '@ts4nfdi/terminology-service-suite-js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('autocomplete-widget-container');
