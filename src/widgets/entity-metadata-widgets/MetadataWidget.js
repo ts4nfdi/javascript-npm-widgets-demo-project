@@ -1,5 +1,6 @@
 import { createMetadata } from '@ts4nfdi/terminology-service-suite-js';
 import { ZBMED_OLS4_API } from '../../config/apis';
+import { logNavigation } from '../../core/logNavigation';
 
 export default {
     name: 'MetadataWidget',
@@ -21,9 +22,9 @@ export default {
             copyButton: 'right',
             showHeader: true,
             className: 'ts4nfdi-metadata-style',
-            onNavigateToEntity: (...args) => console.log('MetadataWidget navigate to entity:', ...args),
-            onNavigateToOntology: (...args) => console.log('MetadataWidget navigate to ontology:', ...args),
-            onNavigateToDisambiguate: (...args) => console.log('MetadataWidget navigate to disambiguate:', ...args),
+            onNavigateToEntity: logNavigation('MetadataWidget', 'entity'),
+            onNavigateToOntology: logNavigation('MetadataWidget', 'ontology'),
+            onNavigateToDisambiguate: logNavigation('MetadataWidget', 'disambiguate'),
         },
         container
     ),
