@@ -1,3 +1,8 @@
-// The mapping widgets exist only in the React package; the JS package has no
-// create function for them yet.
-export default [];
+import MappingListWidget from './MappingListWidget';
+import MappingDetailWidget from './MappingDetailWidget';
+
+// Widgets in the order they appear in the "mapping" tab.
+export default [
+    MappingListWidget,
+    MappingDetailWidget,
+];
