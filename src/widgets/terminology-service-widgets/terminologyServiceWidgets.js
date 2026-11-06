@@ -1,6 +1,6 @@
-import JsonApiWidget from './JsonApiWidget';
+import DataContentWidget from './DataContentWidget';
 
 // Widgets in the order they appear in the "terminology service" tab.
 export default [
-    JsonApiWidget,
+    DataContentWidget,
 ];
