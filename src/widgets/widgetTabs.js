@@ -1,6 +1,7 @@
 import searchWidgets from './search-widgets/searchWidgets';
 import terminologyServiceWidgets from './terminology-service-widgets/terminologyServiceWidgets';
 import apiWidgets from './api-widgets/apiWidgets';
+import apiGatewayWidgets from './api-gateway-widgets/apiGatewayWidgets';
 import additionalEntityMetadataWidgets from './additional-entity-metadata-widgets/additionalEntityMetadataWidgets';
 import hierarchyAndGraphWidgets from './hierarchy-and-graph-widgets/hierarchyAndGraphWidgets';
 import entityMetadataWidgets from './entity-metadata-widgets/entityMetadataWidgets';
@@ -12,6 +13,7 @@ export default [
     { id: 'search', label: 'search', widgets: searchWidgets },
     { id: 'terminology-service', label: 'terminology service', widgets: terminologyServiceWidgets },
     { id: 'api', label: 'api', widgets: apiWidgets },
+    { id: 'api-gateway', label: 'api gateway', widgets: apiGatewayWidgets },
     { id: 'additional-entity-metadata', label: 'additional entity metadata', widgets: additionalEntityMetadataWidgets },
     { id: 'hierarchy-and-graph', label: 'hierarchy and graph', widgets: hierarchyAndGraphWidgets },
     { id: 'entity-metadata', label: 'entity metadata', widgets: entityMetadataWidgets },
