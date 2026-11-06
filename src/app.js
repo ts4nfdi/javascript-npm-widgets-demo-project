@@ -1,20 +1,9 @@
-import * as ts4nfdiWidgets from '@ts4nfdi/terminology-service-suite';
+import tabs from './widgets/widgetTabs';
+import { createTabs } from './core/tabs';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('autocomplete-widget-container');
-
-    if (container) {
-        ts4nfdiWidgets.createAutocomplete(
-            {
-                api: "https://semanticlookup.zbmed.de/api/",
-                selectionChangedEvent:((props) => {
-                    console.log("autocomplete")
-                }),
-            },
-            container
-        );
-        console.log("TS4NFDI AutocompleteWidget rendered.");
-    } else {
-        console.error("Autocomplete widget container not found!");
-    }
+    createTabs(tabs, {
+        nav: document.getElementById('demo-tabs'),
+        panels: document.getElementById('demo-panels'),
+    });
 });
