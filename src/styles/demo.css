@@ -1,0 +1,78 @@
+/*
+ * Layout of the demo page only. Widgets bring their own styles, so nothing
+ * here targets elements inside a widget container.
+ */
+
+body {
+    margin: 0;
+    background: #f7f8fc;
+    color: #1a1c21;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.demo-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+}
+
+.demo-page__title {
+    margin: 0 0 32px;
+    font-size: 32px;
+}
+
+/* Tabs */
+
+.demo-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-bottom: 1px solid #d3dae6;
+    margin-bottom: 40px;
+}
+
+.demo-tabs__tab {
+    padding: 10px 12px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    background: none;
+    color: #343741;
+    font: inherit;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.demo-tabs__tab:hover {
+    color: #0b64dd;
+}
+
+.demo-tabs__tab[aria-selected="true"] {
+    color: #0b64dd;
+    border-bottom-color: #0b64dd;
+}
+
+/* Panels and widget sections */
+
+.demo-panel[hidden] {
+    display: none;
+}
+
+.demo-widget + .demo-widget {
+    margin-top: 64px;
+}
+
+.demo-widget__title {
+    margin: 0 0 4px;
+    font-size: 18px;
+}
+
+.demo-widget__description {
+    margin: 0 0 16px;
+    color: #69707d;
+    font-size: 14px;
+}
+
+.demo-panel__empty {
+    color: #69707d;
+}

@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TSS widgets Demo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ts4nfdi/terminology-service-suite@1.0.34/dist/terminology-service-suite-js.css">
+    <link rel="stylesheet" href="../node_modules/@ts4nfdi/terminology-service-suite-js/dist/terminology-service-suite-js.css">
+    <link rel="stylesheet" href="styles/demo.css">
 </head>
 <body>
-<h1>TS4NFDI Terminology Service Suite Demo</h1>
-<div id="autocomplete-widget-container" style="width: 500px; margin: 20px;"></div>
+<main class="demo-page">
+    <h1 class="demo-page__title">Demo of the Widgets</h1>
+
+    <!-- Tabs and panels are created from src/widgets/widgetTabs.js -->
+    <nav id="demo-tabs" class="demo-tabs" role="tablist" aria-label="Widget categories"></nav>
+    <div id="demo-panels"></div>
+</main>
 
 <script src="../dist/bundle.js"></script>
-
 </body>
 </html>
